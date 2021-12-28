@@ -6,19 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aishwarya Weds Ninad | Wedding Invitation</title>
     <link rel = "icon" type = "image/x-icon" href="images/Ring.png">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+    <script src="animation.js"></script>
     <link rel="stylesheet" href="customCSS.css" />
+    
   </head>
   <body>
     <div class="Parent">
+
       <!-- Main Invitation Card -->
       <img
-        src="images/Aishwarya Invitation Card.png"
+        src="images/Invitation Card.png"
         alt="Invitation Image Not Found"
         class="InvitationImg"
       />
 
+      <!-- Names -->
+      <div class="FadeInAnimation SlideCol NamesCol">
+        <img src="images/Names.png" alt="Names of Bride and Bridegroom" class="SlideImg" />
+      </div>
+
+      <!-- Occasion -->
+      <div class="FadeInAnimation SlideCol OccasionCol">
+        <img src="images/Occasion.png" alt="Occasion of Events" class="SlideImg" />
+      </div>
+
       <!-- Location Icon -->
-      <div class="Col1">
+      <div class="FadeInAnimation SlideCol LocationCol">
         <a href="http://maps.google.com/?q=Janki%20Resort,%20National%20Highway%2048,%20Kharera%20River,%20Vaghaldhara,%20Gujarat" target="_blank">
           <img
             src="images/Location.png"
@@ -28,7 +44,12 @@
         </a>
       </div>
 
-      <div class="Col2">
+      <!-- HelpDesk Names -->
+      <div class="FadeInAnimation SlideCol HelpDeskCol">
+        <img src="images/Contacts.png" alt="Help Desk Names" class="SlideImg" />
+      </div>
+
+      <div class="FadeInAnimation ContactCol1">
         <!-- Aman Bhaiya Contact -->
         <a href="tel:+919924244155" target="_blank">
           <img
@@ -47,7 +68,7 @@
         </a>
       </div>
 
-      <div class="Col3">
+      <div class="FadeInAnimation ContactCol2">
         <!-- Pawan Uncle Contact -->
         <a href="tel:+919374444155" target="_blank">
           <img
