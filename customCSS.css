@@ -45,21 +45,23 @@ body {
 {
   bottom: 3.2%;
 }
+.LocationCol {
+  width: 100%;
+  position: absolute;
+  bottom: 14.5%;
+  text-align: center;
+  z-index: 100;
+}
 .FadeInAnimation
 {
   opacity: 0;
 }
 a {
   text-decoration: none;
-  margin: 0;
-  padding: 0;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  .LocationCol {
-    bottom: 14.5%;
-  }
   .ContactCol1 {
     position: absolute;
     bottom: 5.6%;
@@ -92,9 +94,6 @@ a {
 
 /* Special small devices with height less than 650 (phones, height 650px and down) */
 @media only screen and (max-height: 660px) {
-  .LocationCol {
-    bottom: 14.5%;
-  }
   .ContactCol1 {
     position: absolute;
     bottom: 5.6%;
@@ -126,9 +125,6 @@ a {
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .LocationCol {
-    bottom: 14.5%;
-  }
   .ContactCol1 {
     position: absolute;
     bottom: 5.78%;
@@ -161,9 +157,6 @@ a {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-  .LocationCol {
-    bottom: 14.5%;
-  }
   .ContactCol1 {
     position: absolute;
     bottom: 5.65%;
@@ -196,9 +189,6 @@ a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  .LocationCol {
-    bottom: 14.5%;
-  }
   .ContactCol1 {
     position: absolute;
     bottom: 5.65%;
@@ -231,9 +221,6 @@ a {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  .LocationCol {
-    bottom: 14.5%;
-  }
   .ContactCol1 {
     position: absolute;
     bottom: 5.65%;
