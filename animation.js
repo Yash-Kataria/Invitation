@@ -16,7 +16,7 @@ $(window).on("load", function () {
           element_top_position <= window_bottom_position
         ) {
           if ($(this).css("opacity") == 0) {
-            $(this).fadeTo(1200, 1);
+            $(this).fadeTo(1500, 1);
           }
         }
         // else { //object goes out of view (scrolling up)
