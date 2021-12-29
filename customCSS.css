@@ -49,14 +49,41 @@ body {
   width: 100%;
   position: absolute;
   bottom: 14.5%;
-  text-align: center;
-  z-index: 100;
+  /* text-align: center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LocationDiv
+{
+  z-index: 100 !important;
+  padding: 2px;
+}
+.animatedpulsecircle {
+  border-radius: 50%;
+  background-color: #d05a45;
+  bottom: 25% !important;
+  /* left: 48.8%; */
+  position: absolute;
+  opacity: 0;
+  animation: scaleIn 3s infinite cubic-bezier(.36, .11, .89, .32);
+}
+@keyframes scaleIn {
+  from {
+    transform: scale(.5, .5);
+    opacity: .5;
+  }
+  to {
+    transform: scale(2.5, 2.5);
+    opacity: 0;
+  }
 }
 .FadeInAnimation
 {
   opacity: 0;
 }
-a {
+a 
+{
   text-decoration: none;
 }
 
@@ -82,11 +109,12 @@ a {
     height: 24px;
     width: 16px;
   }
-  .CallIcon {
-    height: 22px;
-    width: 22px;
+  .animatedpulsecircle
+  {
+    width: 20px;
+    height: 20px;
   }
-  .WhatsAppIcon {
+  .ContactIcon {
     height: 22px;
     width: 22px;
   }
@@ -114,11 +142,12 @@ a {
     height: 22px;
     width: 14px;
   }
-  .CallIcon {
-    height: 18px;
+  .animatedpulsecircle
+  {
     width: 18px;
+    height: 18px;
   }
-  .WhatsAppIcon {
+  .ContactIcon {
     height: 18px;
     width: 18px;
   }
@@ -145,11 +174,12 @@ a {
     height: 28px;
     width: 20px;
   }
-  .CallIcon {
-    height: 30px;
-    width: 30px;
+  .animatedpulsecircle
+  {
+    width: 20px;
+    height: 20px;
   }
-  .WhatsAppIcon {
+  .ContactIcon {
     height: 30px;
     width: 30px;
   }
@@ -177,14 +207,16 @@ a {
     height: 30px;
     width: 22px;
   }
-  .CallIcon {
+  .animatedpulsecircle
+  {
+    width: 24px;
+    height: 24px;
+  }
+  .ContactIcon {
     height: 33px;
     width: 33px;
   }
-  .WhatsAppIcon {
-    height: 33px;
-    width: 33px;
-  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -209,13 +241,14 @@ a {
     height: 30px;
     width: 22px;
   }
-  .CallIcon {
+  .animatedpulsecircle
+  {
+    width: 25px;
+    height: 25px;
+  }
+  .ContactIcon {
     height: 35px;
     width: 35px;
-  }
-  .WhatsAppIcon {
-    height: 34px;
-    width: 34px;
   }
 }
 
@@ -241,12 +274,13 @@ a {
     height: 30px;
     width: 22px;
   }
-  .CallIcon {
+  .animatedpulsecircle
+  {
+    width: 25px;
+    height: 25px;
+  }
+  .ContactIcon {
     height: 35px;
     width: 35px;
-  }
-  .WhatsAppIcon {
-    height: 34px;
-    width: 34px;
   }
 }

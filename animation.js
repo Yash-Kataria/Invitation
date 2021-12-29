@@ -1,10 +1,9 @@
 $(window).on("load",function() {
     $(window).scroll(function() {
-      var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+      var windowBottom = parseInt($(this).scrollTop() + $(this).innerHeight());
       $(".FadeInAnimation").each(function() {
         /* Check the location of each desired element */
-        var objectBottom = $(this).offset().top + $(this).outerHeight();
-        
+        var objectBottom = parseInt($(this).offset().top + $(this).outerHeight(true));
         /* If the element is completely within bounds of the window, fade it in */
         if (objectBottom <= windowBottom) { //object comes into view (scrolling down)
           if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
