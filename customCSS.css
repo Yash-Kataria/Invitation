@@ -41,15 +41,14 @@ body {
 {
   bottom: 24%;
 }
-.HelpDeskCol
+.VenueCol
 {
   bottom: 3.2%;
 }
 .LocationCol {
   width: 100%;
   position: absolute;
-  bottom: 14.5%;
-  /* text-align: center; */
+  /* bottom: 14.5%; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -57,7 +56,6 @@ body {
 .LocationDiv
 {
   z-index: 100 !important;
-  padding: 2px;
 }
 .animatedpulsecircle {
   border-radius: 50%;
@@ -78,6 +76,13 @@ body {
     opacity: 0;
   }
 }
+.ContactCol {
+  position: absolute;
+  display: inline-flex;
+  column-gap: 15%;
+  justify-content: space-between;
+}
+
 .FadeInAnimation
 {
   opacity: 0;
@@ -90,24 +95,16 @@ a
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .ContactCol1 {
-    position: absolute;
-    bottom: 5.6%;
-    left: 55.5%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 18%;
+    left: 56%;
   }
   .ContactCol2 {
-    position: absolute;
-    bottom: 3.2%;
-    left: 55.5%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 1%;
+    left: 56%;
   }
   .LocationIcon {
-    height: 24px;
-    width: 16px;
+    height: 22px;
+    width: 14px;
   }
   .animatedpulsecircle
   {
@@ -122,26 +119,7 @@ a
 
 /* Special small devices with height less than 650 (phones, height 650px and down) */
 @media only screen and (max-height: 660px) {
-  .ContactCol1 {
-    position: absolute;
-    bottom: 5.6%;
-    left: 55.5%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
-  }
-  .ContactCol2 {
-    position: absolute;
-    bottom: 3.2%;
-    left: 55.5%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
-  }
-  .LocationIcon {
-    height: 22px;
-    width: 14px;
-  }
+  
   .animatedpulsecircle
   {
     width: 18px;
@@ -154,21 +132,14 @@ a
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
+  
   .ContactCol1 {
-    position: absolute;
-    bottom: 5.78%;
-    left: 54.6%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 18%;
+    left: 55%;
   }
   .ContactCol2 {
-    position: absolute;
-    bottom: 3.48%;
-    left: 54.6%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 1%;
+    left: 55%;
   }
   .LocationIcon {
     height: 28px;
@@ -188,20 +159,12 @@ a
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   .ContactCol1 {
-    position: absolute;
-    bottom: 5.65%;
-    left: 53.8%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 18%;
+    left: 55%;
   }
   .ContactCol2 {
-    position: absolute;
-    bottom: 3.45%;
-    left: 53.8%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 1%;
+    left: 55%;
   }
   .LocationIcon {
     height: 30px;
@@ -221,21 +184,39 @@ a
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  
   .ContactCol1 {
-    position: absolute;
-    bottom: 5.65%;
-    left: 53.5%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 18%;
+    left: 53.8%;
   }
   .ContactCol2 {
-    position: absolute;
-    bottom: 3.4%;
-    left: 53.5%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 1%;
+    left: 53.8%;
+  }
+  .LocationIcon {
+    height: 30px;
+    width: 22px;
+  }
+  .animatedpulsecircle
+  {
+    width: 24px;
+    height: 24px;
+  }
+  .ContactIcon {
+    height: 34px;
+    width: 34px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .ContactCol1 {
+    bottom: 18%;
+    left: 53%;
+  }
+  .ContactCol2 {
+    bottom: 1%;
+    left: 53%;
   }
   .LocationIcon {
     height: 30px;
@@ -252,23 +233,15 @@ a
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
+/* Biggest devices (largest laptops and desktops, 2560px and up) */
+@media only screen and (min-width: 2560px) {
   .ContactCol1 {
-    position: absolute;
-    bottom: 5.65%;
-    left: 52.7%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 18%;
+    left: 51.7%;
   }
   .ContactCol2 {
-    position: absolute;
-    bottom: 3.4%;
-    left: 52.7%;
-    display: inline-flex;
-    column-gap: 15%;
-    justify-content: space-between;
+    bottom: 1%;
+    left: 51.7%;
   }
   .LocationIcon {
     height: 30px;
